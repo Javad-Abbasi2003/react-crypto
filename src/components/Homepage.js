@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 //Api
 import { getCoins } from "../services/api";
 
+//Style
+import Styles from "./Homepage.module.css";
+
 //Component
 import CoinLine from "./shared/CoinLine";
 import Loading from "./shared/Loading";
@@ -32,23 +35,27 @@ const Homepage = () => {
   };
 
   return (
-    <>
+    <div className={Styles.container}>
       {coins.length ? (
-        <div>
+        <>
           <input
             type="text"
             placeholder="Search"
             value={search}
             onChange={changeHandler}
+            className={Styles.search}
           />
-          {searchedCoins.map((coin) => (
-            <CoinLine key={coin.id} data={coin} />
-          ))}
-        </div>
+          <div className={Styles.coinsContainer}>
+            {searchedCoins.map((coin) => (
+              <CoinLine key={coin.id} data={coin} />
+            ))}
+            {!searchedCoins.length && <h1>No crypto found</h1>}
+          </div>
+        </>
       ) : (
         <Loading />
       )}
-    </>
+    </div>
   );
 };
 

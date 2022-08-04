@@ -1,0 +1,63 @@
+.greenContainer,
+.redContainer,
+.grayContainer {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #cccccc;
+}
+.greenContainer {
+  background-color: rgba(0, 128, 0, 0.05);
+}
+.redContainer {
+  background-color: rgba(219, 16, 16, 0.05);
+}
+
+.image {
+  width: 35px;
+}
+
+.nameSpan {
+  width: 130px;
+  font-size: 16px;
+  color: #333333;
+  margin-left: 20px;
+  text-align: left;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.symbolSpan {
+  width: 80px;
+  text-align: left;
+}
+
+.currentPriceSpan {
+  width: 100px;
+  text-align: left;
+}
+
+.grayChangeSpan,
+.greenChangeSpan,
+.redChangeSpan {
+  width: 90px;
+  text-align: left;
+}
+.grayChangeSpan {
+  color: #333333;
+}
+.greenChangeSpan {
+  color: rgb(40, 177, 40);
+}
+.redChangeSpan {
+  color: rgb(219, 16, 16);
+}
+
+.marketCapSpan {
+  margin-left: 20px;
+  width: 130px;
+  text-align: left;
+}

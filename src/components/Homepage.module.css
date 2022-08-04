@@ -1,0 +1,41 @@
+.container {
+  background-color: #fff;
+  box-shadow: -8px -8px 12px #fff, 8px 8px 12px #00000018;
+  border: 1px solid #cacaca;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+  margin: 50px auto;
+}
+
+.search {
+  width: 500px;
+  padding: 0px 10px;
+  margin: 50px;
+  border: 1px solid #cacaca;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+  transition: all ease-in-out 0.25s;
+}
+.search:focus {
+  outline: none;
+  box-shadow: inset -2px -2px 4px #fff, inset 2px 2px 4px #00000018;
+  border: 1px solid #5a5a5a;
+}
+.search::placeholder {
+  color: #0000004d;
+}
+
+.coinsContainer {
+  background-color: #fcfcfc;
+  border: 1px solid #bbbbbb;
+  border-radius: 15px;
+  width: 700px;
+  margin-bottom: 70px;
+  overflow: hidden;
+}
