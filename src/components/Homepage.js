@@ -10,6 +10,7 @@ import Loading from "./shared/Loading";
 const Homepage = () => {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
+  const [searchedCoins, setSearchedCoins] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,17 +19,29 @@ const Homepage = () => {
     };
     fetchData();
   }, []);
+  useEffect(() => {
+    setSearchedCoins(
+      coins.filter((coin) =>
+        coin.name.toLowerCase().includes(search.toLowerCase())
+      )
+    );
+  }, [coins, search]);
 
   const changeHandler = (event) => {
-    setSearch(event.target.value)
-  }
+    setSearch(event.target.value);
+  };
 
   return (
     <>
       {coins.length ? (
         <div>
-          <input type="text" placeholder="Search" value={search} onChange={changeHandler} />
-          {coins.map((coin) => (
+          <input
+            type="text"
+            placeholder="Search"
+            value={search}
+            onChange={changeHandler}
+          />
+          {searchedCoins.map((coin) => (
             <CoinLine key={coin.id} data={coin} />
           ))}
         </div>

@@ -5,10 +5,11 @@ const CoinLine = (props) => {
   return (
     <div>
       {/* <img src={image} alt={name} /> */}
-      <p>{name}</p>
-      {/* <p>{price_change_percentage_24h}</p> */}
-      <p>{current_price} $</p>
-      {/* <p>{market_cap}</p> */}
+      <span>{name}</span>
+      <span>{symbol.toUpperCase()}</span>
+      <span>{current_price.toLocaleString()} $</span>
+      {/* <span>{price_change_percentage_24h}</span>
+      <span>{market_cap.toLocaleString()}</span> */}
     </div>
   );
 };
