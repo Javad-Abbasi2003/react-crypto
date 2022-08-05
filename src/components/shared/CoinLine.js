@@ -28,7 +28,7 @@ const CoinLine = (props) => {
       <span className={Styles.nameSpan}>{name}</span>
       <span className={Styles.symbolSpan}>{symbol.toUpperCase()}</span>
       <span className={Styles.currentPriceSpan}>
-        {current_price.toLocaleString()} $
+        $ {current_price.toLocaleString()}
       </span>
       <span
         className={
@@ -39,10 +39,10 @@ const CoinLine = (props) => {
             : Styles.grayChangeSpan
         }
       >
-        {price_change_percentage_24h} %
+        {price_change_percentage_24h.toFixed(2)} %
       </span>
       <span className={Styles.marketCapSpan}>
-        {market_cap.toLocaleString()} $
+        $ {market_cap.toLocaleString()}
       </span>
     </div>
   );
