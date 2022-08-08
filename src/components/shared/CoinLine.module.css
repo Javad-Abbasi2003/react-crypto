@@ -61,3 +61,34 @@
   width: 130px;
   text-align: left;
 }
+
+@media (max-width: 650px) {
+  .greenContainer,
+  .redContainer,
+  .grayContainer {
+    padding: 15px;
+  }
+  .image {
+    width: 30px;
+  }
+  .nameSpan {
+    width: 140px;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 700;
+  }
+  .symbolSpan {
+    display: none;
+  }
+  .grayChangeSpan,
+  .greenChangeSpan,
+  .redChangeSpan {
+    width: 50px;
+    text-align: left;
+  }
+  .marketCapSpan {
+    display: none;
+  }
+}
+@media (max-width: 1150px) and (min-width: 650px) {
+}
