@@ -90,17 +90,18 @@
     border-radius: 15px;
     box-shadow: -4px -4px 6px #fff, 4px 4px 6px #00000018;
     margin: 20px 0;
-    padding: 10px 0px;
+    padding: 10px 0px 20px;
     overflow: hidden;
   }
   .image {
     width: 200px;
     height: 200px;
     align-self: center;
+    margin-bottom: 10px;
   }
   .link {
     font-size: 18px;
-    margin: 5px 20px
+    margin: 15px 30px 10px
   }
   .notLink {
     flex-direction: column;

@@ -8,6 +8,9 @@
   padding: 20px;
   font-size: 14px;
   border-bottom: 1px solid #cccccc;
+  cursor: default;
+  text-decoration: none;
+  color: #000
 }
 .greenContainer {
   background-color: rgba(0, 128, 0, 0.05);

@@ -17,7 +17,7 @@ const CoinLine = (props) => {
   const change = price_change_percentage_24h;
 
   return (
-    <div
+    <Link to={`/${id}`}
       className={
         change > 0
           ? Styles.greenContainer
@@ -50,7 +50,7 @@ const CoinLine = (props) => {
       <span className={Styles.marketCapSpan}>
         $ {market_cap.toLocaleString()}
       </span>
-    </div>
+    </Link>
   );
 };
 
