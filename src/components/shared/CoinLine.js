@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 //Style
 import Styles from "./CoinLine.module.css";
 
 const CoinLine = (props) => {
   const {
+    id,
     name,
     image,
     market_cap,
@@ -24,8 +26,12 @@ const CoinLine = (props) => {
           : Styles.grayContainer
       }
     >
-      <img src={image} alt={name} className={Styles.image} />
-      <span className={Styles.nameSpan}>{name}</span>
+      <Link to={`/${id}`}>
+        <img src={image} alt={name} className={Styles.image} />
+      </Link>
+      <Link to={`/${id}`} className={Styles.nameSpan}>
+        <span>{name}</span>
+      </Link>
       <span className={Styles.symbolSpan}>{symbol.toUpperCase()}</span>
       <span className={Styles.currentPriceSpan}>
         $ {current_price.toLocaleString()}

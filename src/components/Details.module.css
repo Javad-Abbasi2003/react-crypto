@@ -1,0 +1,123 @@
+.container {
+  background-color: #fff;
+  box-shadow: -8px -8px 12px rgb(255, 255, 255),
+    8px 8px 12px rgba(225, 225, 225);
+  border: 1px solid #cacaca;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  width: 900px;
+  margin: 50px auto;
+  padding: 50px;
+  padding-top: 30px;
+}
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  padding: 3px 8px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  color: #356ddc;
+  transition: all 0.2s ease-out;
+}
+.link img {
+  width: 15px;
+  margin-top: 1px;
+  margin-right: 2px;
+}
+.link:hover {
+  color: #1e59cf;
+  background-color: rgba(53, 109, 220, 0.08);
+}
+.notLink {
+  display: flex;
+  flex-direction: row;
+}
+.image {
+  width: 250px;
+  height: 250px;
+}
+.detailsContainer {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.rank {
+  margin-top: 10px;
+  padding: 1px 5px;
+  border-radius: 5px;
+  background-color: rgb(31, 41, 55);
+  color: rgb(243, 244, 246);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+.name {
+  margin-top: 0;
+}
+.greenPriceChange24 {
+  font-size: 1.1rem;
+  color: #4eaf0a;
+}
+.redPriceChange24 {
+  font-size: 1.1rem;
+  color: #dc3545;
+}
+.currentPrice {
+  margin-top: 0;
+}
+.marketCap {
+}
+.highest {
+  color: #4eaf0a;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.lowest {
+  margin-top: 0;
+  color: #dc3545;
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 92vw;
+    border-radius: 15px;
+    box-shadow: -4px -4px 6px #fff, 4px 4px 6px #00000018;
+    margin: 20px 0;
+    padding: 10px 0px;
+    overflow: hidden;
+  }
+  .image {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  .link {
+    font-size: 18px;
+    margin: 5px 20px
+  }
+  .notLink {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1050px) and (min-width: 650px) {
+  .container {
+    width: calc(92vw - 60px);
+    border-radius: 20px;
+    box-shadow: -6px -6px 9px #fff, 6px 6px 9px #00000018;
+    padding: 30px 30px;
+  }
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+  .link {
+    font-size: 16px;
+  }
+}

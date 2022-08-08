@@ -1,6 +1,6 @@
 .container {
   background-color: #fff;
-  box-shadow: -8px -8px 12px #fff, 8px 8px 12px #00000018;
+  box-shadow: -8px -8px 12px rgb(255, 255, 255), 8px 8px 12px rgba(225, 225, 225);
   border: 1px solid #cacaca;
   border-radius: 25px;
   display: flex;
